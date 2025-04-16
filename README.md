@@ -29,9 +29,9 @@ CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaş
    git clone https://github.com/ebuword/ctransfer.git
    ```
 
-2. **Dosyaları Açın**: İndirdiğiniz dosyaları bir klasör içerisinde açın ve baslat.bat çalıştırın.
+2. **Dosyaları Açın**: İndirdiğiniz dosyaları bir klasör içerisinde açın ve start.bat çalıştırın.
 
-3. **IP Adresi Ayarı**: `ip.txt` dosyasını oluşturun ve içini boş bırakın. baslat.bat açtığınızda IPV4 adresiniz otomatik olarak buna kaydedilecektir. Eğer bu dosya yoksa, uygulama varsayılan olarak `127.0.0.1` kullanacaktır.
+3. **IP Adresi Ayarı**: `ip.txt` dosyasını oluşturun ve içini boş bırakın. start.bat açtığınızda IPV4 adresiniz otomatik olarak buna kaydedilecektir. Eğer bu dosya yoksa, uygulama varsayılan olarak `127.0.0.1` kullanacaktır.
 
 4. **Web Sunucusunu Başlatın**: Web sunucunuzu başlatın. Otomatik olarak varsayılan tarayıcınızda CTransfer açılacaktır.
 
