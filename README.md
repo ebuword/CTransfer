@@ -5,6 +5,7 @@ CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaş
 ## Özellikler
 
 - **Yerel Dosya Paylaşımı**: Dosyalarınızı yerel ağınızdaki diğer cihazlarla güvenli bir şekilde paylaşın.
+- **Otomatik Kategorize Sistemi**: Yüklediğiniz .PNG, .JPG, .GIF, .EXE, .TXT, .ZIP ve benzeri dosyaları filtreleyip kategorize eder. Böylece istediğinize ulaşmak daha kolay olur.
 - **Kullanıcı Dostu Arayüz**: Basit ve anlaşılır bir arayüz ile dosya yükleme ve görüntüleme işlemlerini kolayca gerçekleştirin.
 - **QR Kod Desteği**: Diğer aygıtlar ile aynı bağlantıya katılmak için kare kodu okutun.
 
