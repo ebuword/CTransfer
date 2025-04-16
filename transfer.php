@@ -15,7 +15,7 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
   <meta property="og:image" content="cdn/logo.png">
   <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
   <link rel="icon" type="image/png" href="cdn/logo.png">
-  <title>CTransfer | Yerel Dosya Paylaşımı</title>
+  <title>CTransfer | Transfer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
