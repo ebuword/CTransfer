@@ -1,5 +1,7 @@
 # CTransfer
 
+<img src="/cdn/banner.png">
+
 CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaşmanıza olanak tanıyan bir dosya transfer uygulamasıdır. Bu uygulama, dosyalarınızı yalnızca yerel cihazlar arasında aktarır ve herhangi bir sunucuya veya üçüncü taraf servislere bağlantı kurmaz.
 
 ## Yenilikler
