@@ -7,7 +7,15 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CTransfer | Yerel Dosya Paylaşım Sistemi</title>
+  <meta name="description" content="CTransfer - Yerel Dosya Paylaşım Sistemi">
+  <meta name="keywords" content="dosya paylaşım, yerel ağ, file transfer, local network">
+  <meta name="author" content="CTransfer">
+  <meta property="og:title" content="CTransfer - Yerel Dosya Paylaşım Sistemi">
+  <meta property="og:description" content="CTransfer ile dosyalarınızı yerel ağınızda hızlı, güvenli ve kolay bir şekilde paylaşın.">
+  <meta property="og:image" content="cdn/logo.png">
+  <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+  <link rel="icon" type="image/png" href="cdn/logo.png">
+  <title>CTransfer - Yerel Dosya Paylaşım Sistemi</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,6 +47,15 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <style>
+    @font-face {
+        font-family: 'Blisey';
+        src: url('cdn/Blisey.otf') format('opentype');
+    }
+
+    .brand-font {
+        font-family: 'Blisey', sans-serif;
+    }
+
     @keyframes float {
       0% {
         transform: translateY(0px);
@@ -219,14 +236,9 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div class="text-center">
         <div class="flex flex-row justify-center mb-6 space-x-3 items-center">
-          <div class="inline-block glass-effect rounded-full shadow-lg" data-aos="fade-down" data-aos-duration="800">
-            <div class="bg-gradient-to-r from-blue-400 to-purple-400 text-white px-5 py-4 rounded-full">
-              <i class="fas fa-file-import text-4xl"></i>
-            </div>
+          <div class="inline-block" data-aos="fade-down" data-aos-duration="800">
+              <img src="cdn/logo.png" alt="CTransfer Logo" class="h-12 w-12">
           </div>
-          <h1 class="text-5xl md:text-7xl font-extrabold " data-aos="fade-up" data-aos-duration="800">
-            CTransfer
-          </h1>
         </div>
 
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">

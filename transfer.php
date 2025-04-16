@@ -7,6 +7,14 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CTransfer - Dosya Transfer Sayfası">
+  <meta name="keywords" content="dosya transfer, file upload, dosya yükleme">
+  <meta name="author" content="CTransfer">
+  <meta property="og:title" content="CTransfer - Dosya Transfer">
+  <meta property="og:description" content="CTransfer ile dosyalarınızı hızlı ve güvenli bir şekilde paylaşın.">
+  <meta property="og:image" content="cdn/logo.png">
+  <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+  <link rel="icon" type="image/png" href="cdn/logo.png">
   <title>CTransfer | Yerel Dosya Paylaşımı</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -97,6 +105,10 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
     .modal-content.hiding {
       animation: modalSlideOut 0.3s ease-out forwards;
     }
+
+    .brand-font {
+        font-family: 'Blisey', sans-serif;
+    }
   </style>
 </head>
 
@@ -108,8 +120,10 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
     <div class="text-center relative">
       <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-500/5 dark:to-purple-500/5 rounded-3xl blur-3xl -z-10"></div>
       <div class="relative">
-        <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-          <i class="fa-solid fa-file-import text-black dark:text-white"></i> CTransfer
+        <h1 class="text-4xl brand-font bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-pink-500 flex items-center justify-center space-x-4">
+          <img src="cdn/logo.png" alt="CTransfer Logo" class="h-12 w-12">
+          <div class="w-px h-12 bg-gradient-to-b from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mx-4"></div>
+          <span>CTransfer</span>
         </h1>
         <p class="text-gray-500 dark:text-gray-400 mt-3 text-lg">Yerel ağınızda dosyaları güvenle ve hızlıca paylaşın.</p>
       </div>

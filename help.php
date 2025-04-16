@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yardım | CTransfer</title>
+  <meta name="description" content="CTransfer - Yardım ve Destek">
+  <meta name="keywords" content="yardım, destek, sık sorulan sorular, faq">
+  <meta name="author" content="CTransfer">
+  <meta property="og:title" content="CTransfer - Yardım ve Destek">
+  <meta property="og:description" content="CTransfer hakkında sık sorulan sorular ve destek bilgileri.">
+  <meta property="og:image" content="cdn/logo.png">
+  <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+  <link rel="icon" type="image/png" href="cdn/logo.png">
+  <title>CTransfer - Yardım ve Destek</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -31,9 +39,28 @@
     }
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    .gradient-text {
+      background: linear-gradient(45deg, rgb(87, 151, 255), rgb(161, 120, 255));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @font-face {
+        font-family: 'Blisey';
+        src: url('cdn/Blisey.otf') format('opentype');
+    }
+
+    .brand-font {
+        font-family: 'Blisey', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-light dark:bg-gray-900 text-darkText dark:text-gray-100 min-h-screen font-sans transition-colors duration-200">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen font-sans transition-colors duration-200">
+  <?php include 'navbar.php'; ?>
+
   <div class="relative">
     <!-- Header Background -->
     <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-500/10 to-transparent dark:from-blue-500/5 dark:to-transparent -z-10"></div>
@@ -48,7 +75,7 @@
               <i class="fas fa-question-circle text-3xl"></i>
             </div>
           </div>
-          <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-2">Yardım</h1>
+          <h1 class="text-4xl font-bold gradient-text brand-font mb-4">Yardım ve Destek</h1>
           <p class="text-gray-500 dark:text-gray-400 text-lg">CTransfer kullanımı hakkında sık sorulan sorular ve yardım</p>
         </div>
       </div>

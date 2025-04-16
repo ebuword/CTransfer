@@ -16,12 +16,14 @@ if (!defined('SECURE_ACCESS')) {
         <div class="flex justify-between h-16">
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.php" class="flex flex-row space-x-2 items-center">
-                        <i class="fas fa-file-import text-primary dark:text-blue-400 text-2xl"></i>
-                        <span class="text-xl font-bold text-gray-800 dark:text-white">CTransfer</span>
-                        <span class="text-xs bg-primary/10 text-primary dark:bg-blue-400/10 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">v1.0.0</span>
+                    <a href="index.php" class="flex items-center space-x-2">
+                        <img src="cdn/logo.png" alt="CTransfer Logo" class="h-8 w-8">
+                        <span class="brand-font text-sm text-gray-500">v1.0</span>
+                        <span class="h-16 md:block hidden w-px bg-gray-300 dark:bg-gray-600"></span>
+
                     </a>
                 </div>
+                
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 duration-300 transition-all ">
                     <a href="index.php" class="<?php echo $current_page === 'index.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'duration-200 transition-all border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                         <i class="fa-solid fa-house mr-2"></i> Ana Sayfa

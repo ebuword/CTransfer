@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CTransfer Kurulum Rehberi</title>
+  <meta name="description" content="CTransfer - Kurulum Sayfası">
+  <meta name="keywords" content="kurulum, setup, yapılandırma">
+  <meta name="author" content="CTransfer">
+  <meta property="og:title" content="CTransfer - Kurulum">
+  <meta property="og:description" content="CTransfer kurulum ve yapılandırma sayfası.">
+  <meta property="og:image" content="cdn/logo.png">
+  <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+  <link rel="icon" type="image/png" href="cdn/logo.png">
+  <title>CTransfer - Kurulum</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
