@@ -16,9 +16,9 @@ if (!defined('SECURE_ACCESS')) {
         <div class="flex justify-between h-16">
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.php" class="flex items-center">
-                        <i class="fas fa-paper-plane text-primary dark:text-blue-400 text-2xl"></i>
-                        <span class="ml-1 text-xl font-bold text-gray-800 dark:text-white">CTransfer</span>
+                    <a href="index.php" class="flex flex-row space-x-2 items-center">
+                        <i class="fas fa-file-import text-primary dark:text-blue-400 text-2xl"></i>
+                        <span class="text-xl font-bold text-gray-800 dark:text-white">CTransfer</span>
                         <span class="text-xs bg-primary/10 text-primary dark:bg-blue-400/10 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">v1.0.0</span>
                     </a>
                 </div>

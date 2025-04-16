@@ -40,35 +40,50 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <style>
     @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
     }
+
     .gradient-text {
-      background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+      background: linear-gradient(45deg, rgb(87, 151, 255), rgb(161, 120, 255));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
+
     .glass-effect {
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
+
     .dark .glass-effect {
       background: rgba(17, 24, 39, 0.7);
     }
+
     [data-aos] {
       pointer-events: none;
     }
+
     [data-aos].aos-animate {
       pointer-events: auto;
     }
+
     .feature-card {
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;
     }
+
     .feature-card::before {
       content: '';
       position: absolute;
@@ -76,16 +91,19 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
       transform: translateX(-100%);
       transition: transform 0.6s ease;
     }
+
     .feature-card:hover::before {
       transform: translateX(100%);
     }
+
     .feature-card:hover {
       transform: translateY(-5px);
     }
+
     .step-number {
       position: absolute;
       top: 0;
@@ -103,15 +121,18 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
       transform: translateY(-100%);
       transition: all 0.3s ease;
     }
+
     .step-card:hover .step-number {
       opacity: 1;
       transform: translateY(0);
     }
+
     .cta-button {
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;
     }
+
     .cta-button::after {
       content: '';
       position: absolute;
@@ -119,20 +140,24 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
       left: -50%;
       width: 200%;
       height: 200%;
-      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
       transform: rotate(45deg) translate(-100%, -100%);
       transition: transform 0.6s ease;
     }
+
     .cta-button:hover::after {
       transform: rotate(45deg) translate(100%, 100%);
     }
+
     .cta-button:hover {
       transform: translateY(-2px);
     }
+
     .hero-section {
       position: relative;
       overflow: hidden;
     }
+
     .hero-section::before {
       content: '';
       position: absolute;
@@ -143,10 +168,12 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
       background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1), transparent 70%);
       pointer-events: none;
     }
+
     .feature-icon {
       position: relative;
       transition: all 0.3s ease;
     }
+
     .feature-icon::after {
       content: '';
       position: absolute;
@@ -158,20 +185,25 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
       transform: translate(-50%, -50%) scale(0);
       transition: transform 0.3s ease;
     }
+
     .feature-card:hover .feature-icon::after {
       transform: translate(-50%, -50%) scale(1);
     }
+
     .step-card {
       position: relative;
       transition: all 0.3s ease;
     }
+
     .step-card:hover {
       transform: translateY(-5px);
     }
+
     .step-icon {
       position: relative;
       transition: all 0.3s ease;
     }
+
     .step-card:hover .step-icon {
       transform: scale(1.1);
     }
@@ -186,19 +218,22 @@ $ip = file_exists("ip.txt") ? trim(file_get_contents("ip.txt")) : "127.0.0.1";
     <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 dark:from-blue-500/5 dark:via-purple-500/5 dark:to-pink-500/5"></div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div class="text-center">
-        <div class="inline-block p-3 glass-effect rounded-full shadow-lg mb-8" data-aos="fade-down" data-aos-duration="800">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-full">
-            <i class="fas fa-share-alt text-4xl"></i>
+        <div class="flex flex-row justify-center mb-6 space-x-3 items-center">
+          <div class="inline-block glass-effect rounded-full shadow-lg" data-aos="fade-down" data-aos-duration="800">
+            <div class="bg-gradient-to-r from-blue-400 to-purple-400 text-white px-5 py-4 rounded-full">
+              <i class="fas fa-file-import text-4xl"></i>
+            </div>
           </div>
+          <h1 class="text-5xl md:text-7xl font-extrabold " data-aos="fade-up" data-aos-duration="800">
+            CTransfer
+          </h1>
         </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold gradient-text mb-6" data-aos="fade-up" data-aos-duration="800">
-          Yerel Ağınızda Güvenli Dosya Paylaşımı
-        </h1>
+
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
           CTransfer ile dosyalarınızı yerel ağınızda hızlı, güvenli ve kolay bir şekilde paylaşın. İnternet bağlantısına gerek duymadan, verilerinizi güvenle aktarın.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-          <a href="transfer.php" class="cta-button group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-glow hover:scale-105">
+          <a href="transfer.php" class="cta-button group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-400 to-purple-400 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-glow hover:scale-105">
             <i class="fas fa-upload mr-2 group-hover:rotate-12 transition-transform duration-300"></i> Hemen Başla
           </a>
           <a href="setup.php" class="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-700 dark:text-white bg-white dark:bg-gray-800 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 shadow-lg hover:scale-105">
