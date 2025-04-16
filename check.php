@@ -67,7 +67,7 @@ $zipExtensionActive = extension_loaded('zip');
           </div>
         </div>
         <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-2">Sistem Kontrolü</h1>
-        <p class="text-gray-500 dark:text-gray-400 text-lg">Sistem durumunuz aşağıda belirtilmiştir</p>
+        <p class="text-gray-500 dark:text-gray-400 text-lg">Sistem durumunuz, bilgisayar adı, sunucu bağlantısı, PHP sürümü, dosya izinleri ve diğer önemli sistem bileşenlerinin detaylı kontrol sonuçları aşağıda listelenmiştir.</p>
       </div>
     </div>
     

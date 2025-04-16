@@ -2,6 +2,10 @@
 
 CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaşmanıza olanak tanıyan bir dosya transfer uygulamasıdır. Bu uygulama, dosyalarınızı yalnızca yerel cihazlar arasında aktarır ve herhangi bir sunucuya veya üçüncü taraf servislere bağlantı kurmaz.
 
+## Yenilikler
+- Dark-Light Mod desteği eklendi.
+- Bazı tasarımsal iyileştirmeler.
+
 ## Özellikler
 
 - **Yerel Dosya Paylaşımı**: Dosyalarınızı yerel ağınızdaki diğer cihazlarla güvenli bir şekilde paylaşın.
@@ -17,7 +21,7 @@ CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaş
 
 > Proje tamamen Xampp ile geliştirilmiştir. Sorunsuz olarak Xampp üzerinden kullanabilirsiniz.
 
-## Kurulum
+## Kurulum ve Kullanım
 
 1. **Proje Dosyalarını İndirin**: Proje dosyalarını GitHub üzerinden indirin veya klonlayın.
    
@@ -29,13 +33,9 @@ CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaş
 
 3. **IP Adresi Ayarı**: `ip.txt` dosyasını oluşturun ve içini boş bırakın. baslat.bat açtığınızda IPV4 adresiniz otomatik olarak buna kaydedilecektir. Eğer bu dosya yoksa, uygulama varsayılan olarak `127.0.0.1` kullanacaktır.
 
-4. **Web Sunucusunu Başlatın**: Web sunucunuzu başlatın ve tarayıcınızda `http://localhost/` adresine gidin.
+4. **Web Sunucusunu Başlatın**: Web sunucunuzu başlatın. Otomatik olarak varsayılan tarayıcınızda CTransfer açılacaktır.
 
-## Kullanım
-
-1. **Dosya Yükleme**: Ana sayfada "Dosya Yükle" bölümünden dosyalarınızı seçin ve "Yükle" butonuna tıklayın.
-2. **Yüklenen Dosyaları Görüntüleme**: Yüklediğiniz dosyalar "Yüklenen Dosyalar" bölümünde görüntülenecektir.
-3. **Dosyaları Silme**: Silmek istediğiniz dosyaların yanındaki kutucukları işaretleyin ve "Seçilenleri Sil" butonuna tıklayın.
+> Diğer tüm yardımcı klavuzlar ve ortamlar <a href="/setup.php"> sayfasında anlatılmaktadır.
 
 
 ## Katkıda Bulunma

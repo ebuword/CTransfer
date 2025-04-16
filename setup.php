@@ -81,7 +81,7 @@
         <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
           CTransfer Kurulum Rehberi
         </h1>
-        <p class="text-gray-500 dark:text-gray-400 mt-3 text-lg">Yerel dosya paylaşım sisteminizi başlatmak için lütfen aşağıdaki adımları takip edin.</p>
+        <p class="text-gray-500 dark:text-gray-400 mt-3 text-lg">Yerel ağınızda güvenli ve hızlı dosya paylaşımı yapabilmek için, aşağıdaki adımları sırasıyla takip ederek sisteminizi kurmanız gerekmektedir. Her adım, sistemin düzgün çalışması için önemli bir bileşeni içermektedir.</p>
       </div>
     </div>
     <!-- Main Content -->

@@ -17,19 +17,23 @@ if (!defined('SECURE_ACCESS')) {
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.php" class="flex items-center">
-                        <i class="fa-solid fa-file-import text-primary dark:text-blue-400 text-xl"></i>
+                        <i class="fas fa-paper-plane text-primary dark:text-blue-400 text-2xl"></i>
                         <span class="ml-1 text-xl font-bold text-gray-800 dark:text-white">CTransfer</span>
+                        <span class="text-xs bg-primary/10 text-primary dark:bg-blue-400/10 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">v1.0.0</span>
                     </a>
                 </div>
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="index.php" class="<?php echo $current_page === 'index.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Ana Sayfa
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8 duration-300 transition-all ">
+                    <a href="index.php" class="<?php echo $current_page === 'index.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'duration-200 transition-all border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        <i class="fa-solid fa-house mr-2"></i> Ana Sayfa
                     </a>
-                    <a href="setup.php" class="<?php echo $current_page === 'setup.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Kurulum
+                    <a href="transfer.php" class="<?php echo $current_page === 'transfer.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'duration-200 transition-all border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        <i class="fa-solid fa-file-import mr-2"></i> Transfer
                     </a>
-                    <a href="check.php" class="<?php echo $current_page === 'check.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                        Kontrol
+                    <a href="setup.php" class="<?php echo $current_page === 'setup.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'duration-200 transition-all border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        <i class="fa-solid fa-sliders mr-2"></i> Kurulum
+                    </a>
+                    <a href="check.php" class="<?php echo $current_page === 'check.php' ? 'border-indigo-500 text-gray-900 dark:text-white' : 'duration-200 transition-all border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 hover:text-gray-700 dark:hover:text-gray-200'; ?> inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        <i class="fa-solid fa-check mr-2"></i> Sistem Kontrolü
                     </a>
                 </div>
             </div>
@@ -61,13 +65,16 @@ if (!defined('SECURE_ACCESS')) {
     <div class="sm:hidden hidden" id="mobile-menu">
         <div class="pt-2 pb-3 space-y-1">
             <a href="index.php" class="<?php echo $current_page === 'index.php' ? 'bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-700 dark:text-indigo-200' : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200'; ?> block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-                Ana Sayfa
+                <i class="fa-solid fa-house mr-2"></i> Ana Sayfa
+            </a>
+            <a href="transfer.php" class="<?php echo $current_page === 'transfer.php' ? 'bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-700 dark:text-indigo-200' : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200'; ?> block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                <i class="fa-solid fa-file-import mr-2"></i> Transfer
             </a>
             <a href="setup.php" class="<?php echo $current_page === 'setup.php' ? 'bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-700 dark:text-indigo-200' : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200'; ?> block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-                Kurulum
+                <i class="fa-solid fa-sliders mr-2"></i> Kurulum
             </a>
             <a href="check.php" class="<?php echo $current_page === 'check.php' ? 'bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-700 dark:text-indigo-200' : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200'; ?> block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-                Kontrol
+                <i class="fa-solid fa-check mr-2"></i> Sistem Kontrolü
             </a>
         </div>
     </div>
