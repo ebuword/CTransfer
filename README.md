@@ -37,7 +37,7 @@ CTransfer, yerel ağınızda dosyaları güvenli ve hızlı bir şekilde paylaş
 
 4. **Web Sunucusunu Başlatın**: Web sunucunuzu başlatın. Otomatik olarak varsayılan tarayıcınızda CTransfer açılacaktır.
 
-> Diğer tüm yardımcı klavuzlar ve ortamlar <a href="/setup.php"></a> sayfasında anlatılmaktadır.
+> Diğer tüm yardımcı klavuzlar ve ortamlar <code>localhost/setup.php</code> sayfasında anlatılmaktadır.
 
 
 ## Katkıda Bulunma
